@@ -1,0 +1,92 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Modelo CSS/HTML Básico</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+
+</head>
+<body>
+	<div id="geral">
+		<div id="topo">
+        
+        </div>     
+        
+        <ul id="menu">
+            <li>
+            <a href="index.jsp" title="Entrada no site">Home</a>
+            </li>
+            <li>
+            <a href="cadPaciente.html" title="Paciente">Paciente</a>
+            </li>
+            <li>
+            <a href="cadMedico.html" title="Médico">Médico</a>
+            </li>
+            <li>
+            <a href="cadConsultas.jsp" title="Consulta">Consulta</a>
+            </li>
+            </ul>     
+            <form name="form" id="form" onsubmit="return validar(this);"
+				 action="AgendaServlet?cmd=addpac" method="post">
+					<br> <label>Nome do Paciente: <small> *</small> </label> <input
+						type="text" id="nome_pac" name="nome_pac" onkeyup="troca()" size=50 maxlength=30 /><br><br
+							class="clear" /> 
+				
+				<label>Sexo:</label> <small>*</small> <input type="radio"
+							name="sexo_pac" class="sexo_pac" value="Masculino" /> Masculino
+							<input type="radio" name="sexo_pac" class="sexo_pac"
+							value="Feminino" />Feminino<br><br class="clear" /> 
+				
+				<label>Data Nascimento: </label> <small> * </small>
+				<input type="date" name="dataNasc_pac"><br><br class="clear" />
+									
+				 <label><span>
+				 <small>*</small>Todos os campos são obrigatórios.</span> <br> <br class="clear" />
+				</label>
+				 <label> <input type="submit" id="enviar" name="btCadastrar" value="Enviar" width=10px; height= 5px; />
+				 		 <input type="reset" name="btLimpar" value="Limpar" /><br class="clear" /> 
+				 </label>
+				</form>
+				<div class="resultado"></div>
+
+			</div>
+			<div id="edito">
+				<div id="vertical_barr">
+					<div id="vertical_barr"></div>
+				</div>
+				
+				<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+				<script type="text/javascript" src="jquery.maskedinput-1.3.min.js"></script>
+				<script type="text/javascript">
+					function validar(form) {
+						if (form.nome_pac.value == '') {
+							alert("O campo Nome é obrigatório.");
+							return false;
+						}
+						if (form.sexo_pac[0].checked == false
+								&& form.sexo_pac[1].checked == false) {
+							alert("Selecione o sexo.");
+							return false;
+						}
+						if (form.dataNasc_pac.value == ' ') {
+							alert("O campo Data de Nascimento é obrigatório.")
+							return false;
+						}
+						alert("Cadastro Realizado com Sucesso!!")
+						return true;
+					}
+				</script >
+		<script type="text/javascript"> 
+			function troca() { 
+			var string = document.form.nome_pac.value; 
+		//	var string = string.replace(/[^a-z0-9-éçãí]/gi, ""); 
+			var string = string.replace(/[0-9]/g, ""); 
+				document.form.nome_pac.value=string;} 
+		</script>   
+	</div>
+    <div id="rodape"><br/>
+     	<p class="texto">Todos os Direitos Reservados - Junho de 2013<br />
+        <a href="www.techs.com.br" target="_blank">www.techs.com.br</a></p>
+     </div>  
+</body>
+</html>

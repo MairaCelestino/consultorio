@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<title>Agenda Consulta</title>
+</head>
+<body>
+	<div id="holder">
+		<div id="header"></div>
+		<div id="shadow">
+			<div id="menu">
+				<li><a href="AgendaMedicoServlet?cmd=listar">Medicos Cadastrados</li>
+				</a>
+				<li><a href="index.jsp">Inicio</a>
+				</li>
+			</div>
+			<div id="content">
+			<h3>CADASTROS DE MEDICOS</h3><br>
+				<form name="form" id="form" onsubmit="return validar(this);" action="AgendaMedicoServlet?cmd=addmed" method="post">
+				
+				<label>CRM:</label><small> * </small>
+				<input type="text" id="crm_med" name="crm_med" size="1" maxlength="5" onkeyup="this.value=this.value.replace(/[^\d]/,'')"><br><br class="clear">
+				 
+				<label>Nome do Medico: <small> * </small></label> 
+				<input type="text" id="nome_med" name="nome_med" size=50 maxlength=30 /><br></br class="clear" /> 
+				
+				<label>Especialidade:</label> <small>*</small>
+				<input type="text" id="especialidade" name="especialidade" size=50 maxlength=30 /><br><br class="clear" /> 
+				
+									
+				 <label><span>
+				 <small>*</small>Todos os campos são obrigatórios.</span> <br> <br class="clear" />
+				</label>
+				 <label> <input type="submit" id="enviar" name="btCadastrar" value="Enviar" width=20px; height= 5px; />
+				 		 <input type="reset" name="btLimpar" value="Limpar" /><br class="clear" /> 
+				 </label>
+				</form>
+
+			</div>
+			<div id="edito">
+				<div id="vertical_barr">
+					<div id="vertical_barr"></div>
+				</div>
+				
+				<script type="text/javascript" src="jquery-1.9.1.min.js"></script>
+				<script type="text/javascript">
+					function validar(form) {
+						if(form.crm_med.value == ''){
+							alert("O campo CRM é obrigatório.");
+							return false;
+						}
+						if (form.nome_med.value == '') {
+							alert("O campo Nome é obrigatório.");
+							return false;
+						}
+
+						if (form.especialidade.value == ''){
+							alert("O campo Especialidade é obrigatório.");
+							return false;
+						}
+
+						if (form.usuario_idusuario.value == '') {
+							alert("O campo Usuario é obrigatório.")
+							return false;
+						}
+						return true;
+					}
+				</script>
+</body>
+</html>

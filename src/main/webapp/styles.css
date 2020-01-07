@@ -1,0 +1,275 @@
+@charset "UTF-8";
+
+* {
+	color: #333333;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 1em;
+}
+
+body {
+	background: url("images/bg_gradient.gif") repeat-x scroll center top
+		#0099CC;
+	margin: 0 auto;
+	position: relative;
+	width: 790px;
+}
+
+#form small {
+	color: red;
+}
+
+.clear {
+	clear: both;
+}
+
+a:link,a:visited {
+	text-decoration: none;
+}
+
+a:hover,a:active {
+	text-decoration: underline;
+}
+
+p {
+	font-size: 14px;
+	font-style: normal;
+}
+
+table.linhasalternadas {
+	background: none repeat scroll 0 0 #FFFFF0;
+	border: 3px solid gray;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+table.linhasalternadas tr:nth-child(2n) {
+	background: none repeat scroll 0 0 #C0C0C0;
+}
+
+table td {
+	
+}
+
+#header {
+	padding: 35px 0 15px 30px;
+}
+
+#shadow {
+	background: url("images/bg_content.gif") repeat-y scroll 0 0 transparent;
+	height: 1200px;
+	padding: 0 5px 1px;
+}
+
+#menu {
+	background: url("images/menu.gif") repeat-x scroll 0 0 transparent;
+	height: 30px;
+}
+
+#menu li {
+	color: #666666;
+	float: left;
+	list-style-type: none;
+	padding-top: 2px;
+}
+
+#menu li a:link,#menu li a:visited {
+	color: #FFFFFF;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 2px 30px 0 43px;
+}
+
+#menu li a:hover,#menu li a:active {
+	color: #99CC00;
+	font-size: 1.1em;
+	font-variant: small-caps;
+	font-weight: bold;
+	padding: 2px 30px 0 43px;
+	text-decoration: none;
+}
+
+#edito {
+	background: url("123.jpg") no-repeat scroll right top #E6E6E6;
+}
+
+#edito h2,#edito p {
+	padding-left: 20px;
+	padding-right: 100px;
+	padding-top: 20px;
+}
+
+#edito p {
+	
+}
+
+#edito a:link,#edito a:visited {
+	color: #FFFFFF;
+	font-size: 16px;
+}
+
+#edito a:hover,#edito a:active {
+	color: #333333;
+	font-size: 16px;
+	text-decoration: none;
+}
+
+#button_edito {
+	background: url("images/large_button.gif") no-repeat scroll 0 0
+		transparent;
+	display: block;
+	font-weight: bold;
+	height: 25px;
+	margin-left: 290px;
+	margin-top: 10px;
+	padding-bottom: 10px;
+	padding-top: 3px;
+	text-align: center;
+	width: 150px;
+}
+
+#content {
+	min-height: 300px;
+	padding: 20px;
+}
+
+#vertical_barr {
+	border-left: 1px solid #0099CC;
+	border-right: 1px solid #0099CC;
+}
+
+#content div {
+	float: left;
+	padding: 0 10px 0 26px;
+	top: -37px;
+	width: 694px;
+}
+
+#content div p {
+	padding-top: 10px;
+}
+
+#content div p a:link,#content div p a:visited,#content div p a:hover,#content div p a:active
+	{
+	color: #333333;
+}
+
+#content div li a:link,#content div li a:visited,#content div li a:active,#content div li a:hover
+	{
+	color: #6CC606;
+	font-weight: bold;
+}
+
+a.content_button:link,a.content_button:visited {
+	color: #FFFFFF;
+}
+
+a.content_button:hover,a.content_button:active {
+	color: #333333;
+	text-decoration: none;
+}
+
+.content_button {
+	background: url("images/little_button.gif") no-repeat scroll 0 0
+		transparent;
+	display: block;
+	font-size: 0.7em;
+	font-weight: bold;
+	height: 15px;
+	margin: 15px 0;
+	text-align: center;
+	width: 75px;
+}
+
+#content div ul {
+	font-size: 0.8em;
+	margin-left: 20px;
+}
+
+#content div li {
+	padding: 8px 0 0;
+}
+
+#resol {
+	background: none repeat scroll 0 0 #BFC6D9;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	left: 1280px;
+	margin: 0 auto;
+	position: fixed;
+	text-align: center;
+	top: 0;
+	width: 230px;
+}
+
+#resol h1 {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-size: 15px;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+#resol h2 {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	font-size: 10px;
+	letter-spacing: 3px;
+	margin: 0;
+	padding: 0;
+}
+
+#footer {
+	background: url("images/botton_bg_content.gif") no-repeat scroll 0 0
+		transparent;
+	height: 70px;
+	margin-bottom: 20px;
+	padding: 0 5px;
+}
+
+#footer p {
+	color: #FFFFFF;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#footer p a {
+	color: #FFFFFF;
+}
+
+#footer_terms {
+	bottom: 0;
+	height: 40px;
+	left: 0;
+	position: absolute;
+	width: 100%;
+}
+
+#footer_terms h1 {
+	background: none repeat scroll 0 0 transparent;
+	border: 0 none;
+	color: #7AAEC6;
+	font-size: 0.8em;
+	font-variant: normal;
+	font-weight: normal;
+	padding: 60px 0 0;
+	text-align: right;
+	text-decoration: none;
+}
+
+#footer_terms a {
+	text-decoration: underline;
+}
+
+#footer_terms strong,#footer_terms a {
+	background: none repeat scroll 0 0 transparent;
+	color: #7AAEC6;
+	font-weight: normal;
+}
+
+#holder {
+	margin: 0 auto;
+	min-height: 100%;
+	position: relative;
+}
