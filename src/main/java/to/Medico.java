@@ -1,4 +1,4 @@
-package pacote.to;
+package to;
 
 public class Medico implements java.io.Serializable {
 

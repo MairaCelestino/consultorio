@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="pacote.util.ConverterDate, pacote.to.Medico"
+    import="util.ConverterDate, to.Medico"
     
     %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -11,7 +11,7 @@
 <title>Agenda Consulta</title>
 </head>
 <body>
-    <jsp:useBean id="medico" scope="session" class="pacote.to.Medico" /> 
+    <jsp:useBean id="medico" scope="session" class="to.Medico" /> 
 <body>
  <div id="holder">																																																																																																																																																																																																																																																																																																																				
 <!--BEGIN OF TERMS OF USE. DO NOT EDIT OR DELETE THESE LINES. IF YOU EDIT OR DELETE THESE LINES AN ALERT MESSAGE MAY APPEAR WHEN TEMPLATE WILL BE ONLINE-->

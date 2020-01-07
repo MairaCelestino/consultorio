@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="pacote.util.ConverterDate, pacote.to.Anamnese, pacote.dao.AgendaAnamnese"
+    import=" util.ConverterDate, to.Anamnese, dao.AgendaAnamnese"
     
     %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

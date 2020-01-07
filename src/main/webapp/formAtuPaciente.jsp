@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="pacote.util.ConverterDate, pacote.to.Paciente"
+    import="util.ConverterDate, to.Paciente"
     
     %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -11,7 +11,7 @@
 <title>Agenda Consulta</title>
 </head>
 <body>
-    <jsp:useBean id="paciente" scope="session" class="pacote.to.Paciente" /> 
+    <jsp:useBean id="paciente" scope="session" class="to.Paciente" /> 
 <body>
  <div id="holder">																																																																																																																																																																																																																																																																																																																				
 <!--BEGIN OF TERMS OF USE. DO NOT EDIT OR DELETE THESE LINES. IF YOU EDIT OR DELETE THESE LINES AN ALERT MESSAGE MAY APPEAR WHEN TEMPLATE WILL BE ONLINE-->
@@ -37,7 +37,7 @@
   <!-- CONTENT -->
 
   <div id="content">
-   <form action="AgendaServlet?cmd=atualizar" method="post">
+   <form action="AgendaPacienteServlet?cmd=atualizar" method="post">
 <table>
 	<tr>
 	<td><label>Registro Estátistico:</label></td><td><input type="text" name="re_pac" size=10 maxlength=10 value="${paciente.re_pac}" readonly="readonly"/><br></td>

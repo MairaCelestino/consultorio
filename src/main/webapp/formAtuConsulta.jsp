@@ -1,10 +1,10 @@
-<%@page import="pacote.dao.AgendaMedico"%>
-<%@page import="pacote.dao.AgendaConsulta"%>
-<%@page import="pacote.dao.AgendaPaciente"%>
+<%@page import="dao.AgendaMedico"%>
+<%@page import="dao.AgendaConsulta"%>
+<%@page import="dao.AgendaPaciente"%>
 
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="java.util.*,pacote.util.ConverterDate, pacote.to.Consulta, pacote.to.Paciente, pacote.to.Medico"
+    import="java.util.*,util.ConverterDate, to.Consulta, to.Paciente, to.Medico"
    %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -14,7 +14,7 @@
 <title>Agenda Consulta</title>
 </head>
 <body>
-    <jsp:useBean id="consulta" scope="session" class="pacote.to.Consulta" /> 
+    <jsp:useBean id="consulta" scope="session" class="to.Consulta" /> 
 <div id="holder">
 		<div id="header"></div>
 		<div id="shadow">

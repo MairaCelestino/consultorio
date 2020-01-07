@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Modelo CSS/HTML Básico</title>
+<title>HOME</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -17,13 +17,13 @@
             <a href="index.jsp" title="Entrada no site">Home</a>
             </li>
             <li>
-            <a href="indexPaciente.jsp" title="Área de tutorial CSS">Paciente</a>
+            <a href="indexPaciente.jsp" title="Área de Paciente">Pacientes</a>
             </li>
             <li>
-            <a href="cadMedico.html" title="Técnicas de layout com CSS">Médico</a>
+            <a href="indexMedico.jsp" title="Área de Médico">Médicos</a>
             </li>
             <li>
-            <a href="cadConsultas.jsp" title="Técnicas de efeitos em links">Consulta</a>
+            <a href="cadConsultas.jsp" title="Área de Consultas">Consultas</a>
             </li>
             </ul>       
 	</div>

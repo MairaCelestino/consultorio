@@ -6,7 +6,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Paciente</title>
+<title>Médico</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -21,17 +21,12 @@
             <a href="index.jsp" title="Entrada no site">Home</a>
             </li>
             <li>
-            <a href="cadPaciente.html" title="Cadastrar Paciente">Cadastrar Paciente</a>
+            <a href="cadMedico.html" title="Cadastrar Médico">Cadastrar Médico</a>
             </li>
             <li>
-            <a href="mostrarPacientesCads.jsp" title="Buscar Paciente">Buscar Paciente</a>
+            <a href="mostrarPacientesCads.jsp" title="Buscar Medico">Buscar Medico</a>
             </li>
             <li>
-            <a href="cadaAnamnese.jsp" title="Cadastro Anamense">Anamnese</a>
-            </li>
-            <li>
-            <a href="cadExame.jsp" title="Exame">Exame</a>
-            </li>
             </ul>     
 	</div>
     <div id="rodape"><br/>

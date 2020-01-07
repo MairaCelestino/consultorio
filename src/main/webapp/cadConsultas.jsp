@@ -1,9 +1,9 @@
-<%@page import="pacote.dao.AgendaMedico"%>
-<%@page import="pacote.dao.AgendaConsulta"%>
-<%@page import="pacote.dao.AgendaPaciente"%>
+<%@page import="dao.AgendaMedico"%>
+<%@page import="dao.AgendaConsulta"%>
+<%@page import="dao.AgendaPaciente"%>
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="java.util.*, to.Medico, to.Paciente, pacote.util.ConverterDate"  
+    import="java.util.*, to.Medico, to.Paciente, util.ConverterDate"  
     %>
 <?xml version="1.0" encoding="ISO-8859-1" ?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">

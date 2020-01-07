@@ -3,20 +3,20 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1" />
-<link href="styles.css" rel="stylesheet" type="text/css" />
-<title>Agenda Consulta</title>
+<link href="style.css" rel="stylesheet" type="text/css" />
+<title>Médico</title>
 </head>
 <body>
-	<div id="holder">
-		<div id="header"></div>
-		<div id="shadow">
-			<div id="menu">
-				<li><a href="AgendaMedicoServlet?cmd=listar">Medicos Cadastrados</li>
-				</a>
+	  <div id="geral">
+		<div id="topo">
+	 </div>
+                <ul id="menu">
 				<li><a href="index.jsp">Inicio</a>
+				</a>
+				<li><a href="AgendaMedicoServlet?cmd=listar">Médicos Cadastrados</li>
 				</li>
-			</div>
-			<div id="content">
+			
+		
 			<h3>CADASTROS DE MEDICOS</h3><br>
 				<form name="form" id="form" onsubmit="return validar(this);" action="AgendaMedicoServlet?cmd=addmed" method="post">
 				
@@ -35,10 +35,11 @@
 				</label>
 				 <label> <input type="submit" id="enviar" name="btCadastrar" value="Enviar" width=20px; height= 5px; />
 				 		 <input type="reset" name="btLimpar" value="Limpar" /><br class="clear" /> 
-				 </label>
+			 </label>
 				</form>
-
-			</div>
+				<div class="resultado"></div>
+				</div>
+			
 			<div id="edito">
 				<div id="vertical_barr">
 					<div id="vertical_barr"></div>
@@ -68,5 +69,9 @@
 						return true;
 					}
 				</script>
+	</div>
+    <div id="rodape"><br/>
+     	<p class="texto">Todos os Direitos Reservados - Junho de 2013<br />
+        <a href="www.techs.com.br" target="_blank">www.techs.com.br</a></p>
+     </div>  
 </body>
-</html>

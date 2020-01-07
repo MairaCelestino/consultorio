@@ -1,9 +1,9 @@
-<%@page import="pacote.dao.AgendaMedico"%>
-<%@page import="pacote.dao.AgendaExame"%>
-<%@page import="pacote.dao.AgendaPaciente"%>
+<%@page import="dao.AgendaMedico"%>
+<%@page import="dao.AgendaExame"%>
+<%@page import="dao.AgendaPaciente"%>
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="java.util.*, pacote.to.TipoExame,pacote.to.Exame, pacote.to.Paciente, pacote.util.ConverterDate"  
+    import="java.util.*, to.TipoExame, to.Exame, to.Paciente, util.ConverterDate"  
     %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -53,7 +53,7 @@
 				
 				
 				<% AgendaExame exameDAO = new AgendaExame();
-					List<TipoExame> tipoexame= exameDAO.todosExames();//Select de todos os dados da tabela exame
+					List<TipoExame> tipoexame= exameDAO.todosExames(); //Select de todos os dados da tabela exame
 					Exame exame = new Exame();
 				%>
 				<table border="2">

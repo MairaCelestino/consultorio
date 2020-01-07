@@ -2,7 +2,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>Modelo CSS/HTML Básico</title>
+<title>Paciente</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 
 </head>
@@ -27,7 +27,7 @@
             </li>
             </ul>     
             <form name="form" id="form" onsubmit="return validar(this);"
-				 action="AgendaServlet?cmd=addpac" method="post">
+				 action="AgendaPacienteServlet?cmd=addpac" method="post">
 					<br> <label>Nome do Paciente: <small> *</small> </label> <input
 						type="text" id="nome_pac" name="nome_pac" onkeyup="troca()" size=50 maxlength=30 /><br><br
 							class="clear" /> 

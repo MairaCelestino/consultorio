@@ -71,6 +71,7 @@ public class AgendaPacienteServlet extends javax.servlet.http.HttpServlet {
 				rd = request.getRequestDispatcher("/cadPaciente.html");
 				System.out.println("Registro: " + paciente.getRe_pac());
 				System.out.println("Sexo: " + paciente.getSexo_pac());
+				rd = request.getRequestDispatcher("AgendaPacienteServlet?cmd=listar");
 			}
 
 			else if (cmd.equalsIgnoreCase("exc")) {

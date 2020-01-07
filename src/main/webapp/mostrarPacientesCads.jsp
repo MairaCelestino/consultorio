@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html"
     pageEncoding="ISO-8859-1"
-    import="java.util.*, pacote.to.Paciente"  
+    import="java.util.*, to.Paciente"  
     %>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -44,7 +44,7 @@
             </ul>    
             
             <br>
-		<form method="get" action="AgendaServlet">
+		<form method="get" action="AgendaPacienteServlet">
 		 <tr>
 			<td>Nome do Paciente:</td>
 				<td><input type="text" id="nome_pac" name="nome_pac" size=50 maxlength=30/>
@@ -86,7 +86,7 @@ for( Iterator i=pacienteList.iterator( ); i.hasNext( ); )
      <a href="javascript:excluir(<%=l.getRe_pac( )%>)"> 
         <img title="exluir" src="icon.gif" alt="Pulpit rock" width="15" height="15"> 
      </a>
-      <a href="AgendaServlet?cmd=atu&re_pac=<%=l.getRe_pac( )%>">    
+      <a href="AgendaPacienteServlet?cmd=atu&re_pac=<%=l.getRe_pac( )%>">    
         <img title="alterar" src="icone2.jpg" alt="Pulpit rock" width="15" height="15"> 
        </a>
 	</td>
@@ -101,7 +101,7 @@ for( Iterator i=pacienteList.iterator( ); i.hasNext( ); )
 	<script>
 function excluir(id) {
 	if (confirm("Tem certeza que deseja excluir?")) {
-		location.href="AgendaServlet?cmd=exc&re_pac=" + id;
+		location.href="AgendaPacienteServlet?cmd=exc&re_pac=" + id;
 	}
 	else {
 	}

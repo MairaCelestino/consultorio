@@ -77,7 +77,7 @@ public class AgendaMedicoServlet extends javax.servlet.http.HttpServlet {
 					System.out.println("Registro : " + medico.getCrm_med());
 					dao.excluir(medico);
 					System.out.println("Registro : " + medico.getCrm_med());
-					rd = request.getRequestDispatcher("AgendaMedicoServlet?cmd=listar");
+					//rd = request.getRequestDispatcher("AgendaMedicoServlet?cmd=listar");
 				}
 
 				else if (cmd.equalsIgnoreCase("atu")) {
