@@ -78,7 +78,7 @@ public class AgendaPacienteServlet extends javax.servlet.http.HttpServlet {
 				System.out.println("Registro : " + paciente.getRe_pac());
 				dao.excluir(paciente);
 				System.out.println("Registro : " + paciente.getRe_pac());
-				rd = request.getRequestDispatcher("AgendaServlet?cmd=listar");
+				rd = request.getRequestDispatcher("AgendaPacienteServlet?cmd=listar");
 			}
 
 			else if (cmd.equalsIgnoreCase("atu")) {
@@ -101,7 +101,7 @@ public class AgendaPacienteServlet extends javax.servlet.http.HttpServlet {
 				// rd =
 				// request.getRequestDispatcher("/AgendaConsulta/AgendaServlet?nome_pac=&cmd=paciente&Pesquisar=Pesquisar");
 				// rd = request.getRequestDispatcher("AgendaServlet?cmd=listar");
-				response.sendRedirect("/AgendaConsulta/AgendaServlet?nome_pac=&cmd=paciente&Pesquisar=Pesquisar");
+				response.sendRedirect("/consultorio/AgendaPacienteServlet?nome_pac=&cmd=paciente&Pesquisar=Pesquisar");
 				System.out.println("Antes de atualza Sexo: " + paciente.getSexo_pac());
 			}
 

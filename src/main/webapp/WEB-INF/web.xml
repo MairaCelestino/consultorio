@@ -44,6 +44,10 @@
 		<url-pattern>/AgendaMedicoServlet</url-pattern>
 	</servlet-mapping>
 	<servlet-mapping>
+		<servlet-name>AgendaPacienteServlet</servlet-name>
+		<url-pattern>/AgendaPacienteServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
 		<servlet-name>AgendaConsultaServlet</servlet-name>
 		<url-pattern>/AgendaConsultaServlet</url-pattern>
 	</servlet-mapping>

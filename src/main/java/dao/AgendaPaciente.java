@@ -20,7 +20,7 @@ public class AgendaPaciente implements InterfacePacienteAgenda {
 
 		System.out.println("Entrou!!");
 		if (paciente == null)
-			throw new AgendaException("O valor passado não pode ser nulo!!");
+			throw new AgendaException("O valor passado nao pode ser nulo!!");
 		try {
 			conn = ConnectionAgendaFactory.getConnection();
 			String SQL = "INSERT INTO paciente(nome_pac,sexo_pac,dataNasc_pac)" + "values(?, ?, ?)";
@@ -46,7 +46,7 @@ public class AgendaPaciente implements InterfacePacienteAgenda {
 
 		System.out.println("Entrou!!");
 		if (paciente == null)
-			throw new AgendaException("O Valor não pode ser nulo");
+			throw new AgendaException("O Valor nï¿½o pode ser nulo");
 		try {
 			conn = ConnectionAgendaFactory.getConnection();
 			String SQL = "UPDATE paciente SET nome_pac=?, " + "sexo_pac=?," + "dataNasc_pac=?" + "where re_pac=?";
@@ -70,7 +70,7 @@ public class AgendaPaciente implements InterfacePacienteAgenda {
 		System.out.println("Entrou Excluir");
 
 		if (paciente == null)
-			throw new AgendaException("O valor não pode ser nulo");
+			throw new AgendaException("O valor nï¿½o pode ser nulo");
 		try {
 			conn = ConnectionAgendaFactory.getConnection();
 			ps = conn.prepareStatement("delete from paciente where re_pac=?");
@@ -124,7 +124,7 @@ public class AgendaPaciente implements InterfacePacienteAgenda {
 			ps.setInt(1, re_pac);
 			rs = ps.executeQuery();
 			if (!rs.next()) {
-				throw new AgendaException("Não foi encontrado nenhum " + "registro com o Registro: " + re_pac);
+				throw new AgendaException("Nï¿½o foi encontrado nenhum " + "registro com o Registro: " + re_pac);
 			}
 
 			String nome_pac = rs.getString(2);
